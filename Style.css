@@ -1,0 +1,91 @@
+    <style>
+        /* CSS untuk Tampilan dan Desain */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fce4ec; /* Pink muda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            transition: background-color 0.5s;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: 20px;
+            transition: transform 0.5s ease-in-out, background-color 0.3s;
+        }
+
+        #birthday-message {
+            background-color: #fff3e0; /* Warna lebih hangat */
+            border: 3px solid #ffcc80;
+        }
+
+        h1 {
+            color: #e91e63; /* Pink cerah */
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #ff9800; /* Oranye cerah */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .wish-text {
+            font-style: italic;
+            font-size: 1.1em;
+            transition: opacity 0.3s;
+            min-height: 3em; /* Biar tidak goyang saat ganti pesan */
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #d81b60;
+        }
+
+        button {
+            background-color: #ff9800; /* Oranye */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #e68900;
+            transform: translateY(-2px);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Animasi saat kartu muncul */
+        .show-card {
+            animation: popIn 0.7s ease-out;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.5) rotateY(90deg); }
+            to { opacity: 1; transform: scale(1) rotateY(0deg); }
+        }
+    </style>
